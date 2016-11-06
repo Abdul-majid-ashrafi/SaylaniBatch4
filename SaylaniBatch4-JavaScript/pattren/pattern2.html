@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div id="e" align="center" style="position: absolute; left: 270px"></div>
+<!--<hr/>-->
+
+<span id="a" align="right" style="float: right;"></span>
+<span id="b" align="bottom"></span>
+</body>
+<script>
+
+//    for(var m = 0 ; m < 10; m++){
+//        for(var a = 0 ; a < m; a++){
+//            document.write(" X" + " A" + " X" + " A")
+//        }
+//        document.write("OO" + "<br />")
+//
+//    }
+//    for(var i =  10 ; i > 0 ; i--){
+//        for(var x = 0 ; x < i; x++){
+//            document.write(" X" + " A"+" X" + " A")
+//        }
+//        document.write("OOO"  + "<br />")
+//
+//    }
+
+
+//for(var m = 0 ; m < 10; m++){
+//    for(var a = 0 ; a < m; a++){
+//        document.write(" X" )
+//    }
+//    document.write("" + "<br />")
+//
+//}
+//for(var i =  10 ; i > 0 ; i--){
+//    for(var x = 0 ; x < i; x++){
+//        document.write(" X" )
+//    }
+//    document.write(""  + "<br />")
+//
+//}
+
+
+//for(var m = 10 ; m > 0; m--){
+//    for(var a = 0 ; a < m; a++){
+//        document.getElementById("e").innerHTML += " X"
+////        document.write(" X" )
+//    }
+//    document.getElementById("e").innerHTML += "<br />"
+////    document.write("" + "<br />")
+//
+//}
+
+
+    for(var m = 0 ; m < 10; m++){
+        for(var a = 0 ; a < m; a++){
+//            document.write(" X" + " A" + " X" + " A")
+                    document.getElementById("e").innerHTML += " XXXXXXX"
+        }
+            document.getElementById("e").innerHTML += "<br />"
+
+//        document.write("OO" + "<br />")
+
+    }
+    for(var i =  10 ; i > 0 ; i--) {
+        for (var x = 0; x < i; x++) {
+            document.getElementById("e").innerHTML += "********"
+        }
+        document.getElementById("e").innerHTML += "<br />"
+    }
+
+
+
+
+
+for(var m = 0 ; m < 15; m++){
+    for(var a = 0 ; a < m; a++){
+//            document.write(" X" + " A" + " X" + " A")
+        document.getElementById("a").innerHTML += " X"
+
+    }
+    document.getElementById("a").innerHTML +=      "O" +"<br /> "
+
+//        document.write("OO" + "<br />")
+
+}
+for(var i =  25 ; i > 0 ; i--){
+    for(var x = 0 ; x < i; x++){
+        document.getElementById("a").innerHTML += " X"
+    }
+    document.getElementById("a").innerHTML +=       "O" +"<br /> "
+
+}
+
+
+
+
+
+for(var m = 0 ; m < 15; m++){
+    for(var a = 0 ; a < m; a++){
+//            document.write(" X" + " A" + " X" + " A")
+        document.getElementById("b").innerHTML += " X"
+
+    }
+    document.getElementById("b").innerHTML +=      "O" +"<br /> "
+
+//        document.write("OO" + "<br />")
+
+}
+for(var i =  25 ; i > 0 ; i--){
+    for(var x = 0 ; x < i; x++){
+        document.getElementById("b").innerHTML += " X"
+    }
+    document.getElementById("b").innerHTML +=       "O" +"<br /> "
+
+}
+
+</script>
+</html>

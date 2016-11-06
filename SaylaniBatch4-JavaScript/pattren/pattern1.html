@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <script>
+
+
+
+        function display1() {
+
+            function a(){
+                for(var i=0;i<10;i++){
+                    for(var j=0;j<i;j++){
+                        document.getElementById("a").innerHTML +=  "*";
+                    }
+                    document.getElementById("a").innerHTML += "<br />";
+                }
+            }
+            function b(){
+                for(var i=0;i<10;i++){
+                    for(var j=0;j<=i;j++){
+                        document.getElementById("b").innerHTML +=  "M";
+                    }
+                    document.getElementById("b").innerHTML += "<br />";
+                }
+            }
+            function c(){
+                for(var i=10;i>0;i--){
+                    for(var j=0; j<i ;j++){
+                        document.getElementById("c").innerHTML +=  "* ";
+                    }
+                    document.getElementById("c").innerHTML += "<br />";
+                }
+            }
+            function d(){
+                alert(1313)
+                for(var i=10;i>0;i--){
+                    for(var j=1; j<i ;j++ ){
+                        document.getElementById("d").innerHTML +=  j + " ";
+                    }
+                    document.getElementById("d").innerHTML += "<br />";
+                }
+            }
+
+
+
+
+            function e(){
+                for(var i=0;i<10;i++){
+                    for(var j=0;j<=i;j++){
+                        document.getElementById("e").innerHTML +=  "# ";
+                    }
+                    document.getElementById("e").innerHTML += "<br />";
+                }
+                for(i=10;i>0;i--){
+                    for(j=0; j<i ;j++){
+                        document.getElementById("e").innerHTML +=  "# ";
+                    }
+                    document.getElementById("e").innerHTML += "<br />";
+                }
+            }
+
+
+
+
+
+            var aa = document.getElementById("list");
+            var bb = aa.options[aa.selectedIndex].text;
+
+
+            switch (bb.toString()){
+                case "Pattern 1":
+                    a();
+                    break;
+                case "Pattern 2":
+                    b();
+                    break;
+                case "Pattern 3":
+                    c();
+                    break;
+                case "Pattern 4":
+                    d();
+                    break;
+                case "Pattern 5":
+                    e();
+                    break;
+                case "All at once":
+                    a();
+                    b();
+                    c();
+                    d();
+                    e();
+                    break;
+                default:
+                    alert("incorrect entry");
+
+            }
+
+        }
+        function cls(){
+            document.getElementById("a").innerHTML = "";
+            document.getElementById("b").innerHTML = "";
+            document.getElementById("c").innerHTML = "";
+            document.getElementById("d").innerHTML = "";
+            document.getElementById("e").innerHTML = "";
+
+        }
+    </script>
+    <style>
+        body{
+            background-color: rgb(230, 237, 255);
+        }
+        div{
+            width: 8em;
+        }
+        input,select {
+            font-size: 1.6em;
+            font-family: "Segoe UI Light", "Segoe UI Semilight", "Segoe UI", serif;
+        }
+        select{
+            background-color: rgb(255, 209, 216);
+
+        }
+
+
+
+        #author{
+            font-family: "Segoe UI Light", "Segoe UI Semilight", "Segoe UI", serif;
+            color: rgba(237, 0, 50, 0.82);
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <select id="list">
+        <option>Pattern 1</option>
+        <option>Pattern 2</option>
+        <option>Pattern 3</option>
+        <option>Pattern 4</option>
+        <option>Pattern 5</option>
+        <option>All at once</option>
+    </select>
+    <input type="button" value="Display now" onclick="display1()">
+    <input type="button" value="Clear screen" onclick="cls()">
+
+</form>
+<p id="a"></p>
+<div><p id="b" align="center"></p></div>
+<div><p id="c" align="center"></p></div>
+<p id="d"></p>
+<div><p id="e" align="center"></p></div>
+<p id="author">this program is coded by</p>
+</body>
+</html>
