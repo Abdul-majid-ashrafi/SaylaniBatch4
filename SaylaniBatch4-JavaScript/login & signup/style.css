@@ -1,0 +1,50 @@
+ body {
+            background: center;
+            background-image: url("http://www.intrawallpaper.com/static/images/Nice-Green-Home-Wallpaper-HD.jpg");
+            text-align: center;
+            color: white
+        }
+        
+        div.main {
+            box-shadow: 3px 5px 7px 3px;
+            border-radius: 15px;
+            margin: 11em auto;
+            width: 290px;
+            padding: 5px 60px 5px 60px;
+        }
+        
+        h3 {
+            font-family: sans-serif;
+            padding: 10px;
+            border-radius: 13px 13px 0px 0px;
+            box-shadow: 3px 5px 7px black;
+            background: linear-gradient(to top, brown, goldenrod);
+        }
+        
+        div.second {
+            padding: 20px;
+        }
+        
+        input {
+                        /*box-shadow: 3px 5px 7px 3px white;*/
+
+            margin: 10px;            
+            color: black;
+            /*border: inset 2px #2d221c;*/
+            border-radius: 7px;
+            font-size: 13px;
+            font-weight: bold;
+            padding: 8px 50px 8px 50px;
+            background-color: transparent;
+            text-align: center;
+        }
+        
+        /*img,*/
+        button {
+            font-size: 17px;
+            font-weight: bold;
+            padding: 8px 50px 8px 50px;
+            background: transparent;
+            margin: 10px;
+            border-radius: 10px;
+        }
